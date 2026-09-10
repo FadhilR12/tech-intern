@@ -1,0 +1,488 @@
+{
+	"vacancy": [
+		{
+			"id": 1,
+			"title": "Frontend Developer Intern",
+			"company": "Arunika Commerce",
+			"companyInitial": "AC",
+			"workType": "Hybrid",
+			"descHtml": "<h2>Tentang role ini</h2><p>Arunika Commerce membantu brand lokal mengelola katalog, pesanan, dan promosi dari satu dashboard.</p><h2>Yang akan kamu kerjakan</h2><ul><li>Mengembangkan komponen antarmuka reusable.</li><li>Mengintegrasikan REST API.</li><li>Menulis unit test sederhana.</li></ul><h2>Kualifikasi</h2><ul><li>Memahami HTML, CSS, JavaScript.</li><li>Memahami responsive design.</li><li>Memahami Git.</li></ul>",
+			"location": "Jakarta Selatan",
+			"createdAt": "1787324368",
+			"applyUrl": "https://example.com/careers/frontend-intern",
+			"visibleStatus": "Shown",
+			"isDeleted": false,
+			"deletedAt": null
+		},
+		{
+			"id": 2,
+			"title": "Backend Engineer Intern",
+			"company": "SakuNusa",
+			"companyInitial": "SN",
+			"workType": "Remote",
+			"descHtml": "<h2>Tentang role ini</h2><p>SakuNusa membangun layanan backend untuk berbagai produk digital Indonesia.</p><h2>Yang akan kamu kerjakan</h2><ul><li>Mengembangkan REST API.</li><li>Mengelola database.</li><li>Menulis unit test.</li></ul><h2>Kualifikasi</h2><ul><li>Memahami dasar backend.</li><li>Memahami SQL.</li><li>Memahami Git.</li></ul>",
+			"location": "Jakarta Pusat",
+			"createdAt": "1787237968",
+			"applyUrl": "https://example.com/careers/backend-intern",
+			"visibleStatus": "Shown",
+			"isDeleted": false,
+			"deletedAt": null
+		},
+		{
+			"id": 3,
+			"title": "UI/UX Designer Intern",
+			"company": "Kreasi Digital",
+			"companyInitial": "KD",
+			"workType": "Onsite",
+			"descHtml": "<h2>Tentang role ini</h2><p>Kreasi Digital mengembangkan berbagai produk digital untuk perusahaan dan startup.</p><h2>Yang akan kamu kerjakan</h2><ul><li>Membuat wireframe.</li><li>Membuat prototype menggunakan Figma.</li><li>Melakukan usability testing.</li></ul><h2>Kualifikasi</h2><ul><li>Menguasai Figma.</li><li>Memahami prinsip UI/UX.</li><li>Memiliki portfolio.</li></ul>",
+			"location": "Bandung",
+			"createdAt": "1787151568",
+			"applyUrl": "https://example.com/careers/uiux-intern",
+			"visibleStatus": "Shown",
+			"isDeleted": false,
+			"deletedAt": null
+		},
+		{
+			"id": 4,
+			"title": "Mobile Developer Intern",
+			"company": "Nusa Teknologi",
+			"companyInitial": "NT",
+			"workType": "Hybrid",
+			"descHtml": "<h2>Tentang role ini</h2><p>Nusa Teknologi mengembangkan aplikasi mobile untuk berbagai kebutuhan bisnis.</p><h2>Yang akan kamu kerjakan</h2><ul><li>Mengembangkan fitur aplikasi.</li><li>Mengintegrasikan API.</li><li>Memperbaiki bug.</li></ul><h2>Kualifikasi</h2><ul><li>Memahami Flutter atau React Native.</li><li>Memahami REST API.</li><li>Memahami Git.</li></ul>",
+			"location": "Jakarta Barat",
+			"createdAt": "1787065168",
+			"applyUrl": "https://example.com/careers/mobile-intern",
+			"visibleStatus": "Shown",
+			"isDeleted": false,
+			"deletedAt": null
+		},
+		{
+			"id": 5,
+			"title": "Data Analyst Intern",
+			"company": "Analitika Labs",
+			"companyInitial": "AL",
+			"workType": "Remote",
+			"descHtml": "<h2>Tentang role ini</h2><p>Analitika Labs membantu perusahaan mengambil keputusan berdasarkan data.</p><h2>Yang akan kamu kerjakan</h2><ul><li>Membersihkan dataset.</li><li>Membuat dashboard.</li><li>Melakukan analisis data.</li></ul><h2>Kualifikasi</h2><ul><li>Memahami SQL.</li><li>Memahami dasar statistik.</li><li>Mampu menggunakan spreadsheet.</li></ul>",
+			"location": "Jakarta",
+			"createdAt": "1786978768",
+			"applyUrl": "https://example.com/careers/data-analyst",
+			"visibleStatus": "Shown",
+			"isDeleted": false,
+			"deletedAt": null
+		},
+		{
+			"id": 6,
+			"title": "DevOps Engineer Intern",
+			"company": "CloudNusa",
+			"companyInitial": "CN",
+			"workType": "Remote",
+			"descHtml": "<h2>Tentang role ini</h2><p>CloudNusa menyediakan solusi cloud infrastructure untuk perusahaan teknologi.</p><h2>Yang akan kamu kerjakan</h2><ul><li>Membantu CI/CD pipeline.</li><li>Membantu deployment aplikasi.</li><li>Memonitor server.</li></ul><h2>Kualifikasi</h2><ul><li>Memahami Linux.</li><li>Memahami Docker.</li><li>Memahami cloud computing.</li></ul>",
+			"location": "Jakarta Timur",
+			"createdAt": "1786892368",
+			"applyUrl": "https://example.com/careers/devops",
+			"visibleStatus": "Shown",
+			"isDeleted": false,
+			"deletedAt": null
+		},
+		{
+			"id": 7,
+			"title": "QA Engineer Intern",
+			"company": "Fintek Maju",
+			"companyInitial": "FM",
+			"workType": "Onsite",
+			"descHtml": "<h2>Tentang role ini</h2><p>Fintek Maju membangun produk finansial digital.</p><h2>Yang akan kamu kerjakan</h2><ul><li>Membuat test case.</li><li>Melakukan testing.</li><li>Melaporkan bug.</li></ul><h2>Kualifikasi</h2><ul><li>Memahami software testing.</li><li>Teliti.</li><li>Memahami API testing.</li></ul>",
+			"location": "Tangerang",
+			"createdAt": "1786805968",
+			"applyUrl": "https://example.com/careers/qa",
+			"visibleStatus": "Hidden",
+			"isDeleted": false,
+			"deletedAt": null
+		},
+		{
+			"id": 8,
+			"title": "Cyber Security Intern",
+			"company": "SecureNet Indonesia",
+			"companyInitial": "SI",
+			"workType": "Hybrid",
+			"descHtml": "<h2>Tentang role ini</h2><p>SecureNet Indonesia membantu perusahaan meningkatkan keamanan aplikasi dan infrastruktur.</p><h2>Yang akan kamu kerjakan</h2><ul><li>Melakukan vulnerability assessment.</li><li>Menganalisis security log.</li><li>Membuat laporan keamanan.</li></ul><h2>Kualifikasi</h2><ul><li>Memahami dasar jaringan.</li><li>Memahami cybersecurity.</li><li>Memiliki kemampuan analisis.</li></ul>",
+			"location": "Jakarta Selatan",
+			"createdAt": "1786719568",
+			"applyUrl": "https://example.com/careers/security",
+			"visibleStatus": "Shown",
+			"isDeleted": false,
+			"deletedAt": null
+		},
+		{
+			"id": 9,
+			"title": "Full Stack Developer Intern",
+			"company": "StartupHub",
+			"companyInitial": "SH",
+			"workType": "Hybrid",
+			"descHtml": "<h2>Tentang role ini</h2><p>StartupHub membangun platform kolaborasi untuk membantu startup mengelola operasional.</p><h2>Yang akan kamu kerjakan</h2><ul><li>Membangun fitur frontend.</li><li>Membangun backend.</li><li>Mengintegrasikan database.</li></ul><h2>Kualifikasi</h2><ul><li>Memahami HTML, CSS, JavaScript.</li><li>Memahami backend.</li><li>Memahami database.</li></ul>",
+			"location": "Bandung",
+			"createdAt": "1786633168",
+			"applyUrl": "https://example.com/careers/fullstack",
+			"visibleStatus": "Shown",
+			"isDeleted": true,
+			"deletedAt": "1787237968"
+		},
+		{
+			"id": 10,
+			"title": "Software Engineer Intern",
+			"company": "Tekno Raya",
+			"companyInitial": "TR",
+			"workType": "Remote",
+			"descHtml": "<h2>Tentang role ini</h2><p>Tekno Raya mengembangkan berbagai solusi software untuk perusahaan.</p><h2>Yang akan kamu kerjakan</h2><ul><li>Mengembangkan fitur aplikasi.</li><li>Melakukan debugging.</li><li>Membuat dokumentasi teknis.</li></ul><h2>Kualifikasi</h2><ul><li>Memahami algoritma.</li><li>Menguasai salah satu bahasa pemrograman.</li><li>Memahami Git.</li></ul>",
+			"location": "Surabaya",
+			"createdAt": "1786546768",
+			"applyUrl": "https://example.com/careers/software-engineer",
+			"visibleStatus": "Shown",
+			"isDeleted": false,
+			"deletedAt": null
+		}
+	],
+	"totalView": [
+		{
+			"vacId": 1,
+			"count": 178
+		},
+		{
+			"vacId": 2,
+			"count": 173
+		},
+		{
+			"vacId": 3,
+			"count": 332
+		},
+		{
+			"vacId": 4,
+			"count": 135
+		},
+		{
+			"vacId": 5,
+			"count": 391
+		},
+		{
+			"vacId": 6,
+			"count": 247
+		},
+		{
+			"vacId": 7,
+			"count": 117
+		},
+		{
+			"vacId": 8,
+			"count": 275
+		},
+		{
+			"vacId": 9,
+			"count": 224
+		},
+		{
+			"vacId": 10,
+			"count": 467
+		}
+	],
+	"view": [
+		{
+			"vacId": 1,
+			"createdAt": "21-08-2026",
+			"count": 25
+		},
+		{
+			"vacId": 1,
+			"createdAt": "20-08-2026",
+			"count": 18
+		},
+		{
+			"vacId": 1,
+			"createdAt": "19-08-2026",
+			"count": 32
+		},
+		{
+			"vacId": 1,
+			"createdAt": "18-08-2026",
+			"count": 21
+		},
+		{
+			"vacId": 1,
+			"createdAt": "17-08-2026",
+			"count": 15
+		},
+		{
+			"vacId": 2,
+			"createdAt": "21-08-2026",
+			"count": 14
+		},
+		{
+			"vacId": 2,
+			"createdAt": "20-08-2026",
+			"count": 22
+		},
+		{
+			"vacId": 2,
+			"createdAt": "19-08-2026",
+			"count": 17
+		},
+		{
+			"vacId": 2,
+			"createdAt": "18-08-2026",
+			"count": 11
+		},
+		{
+			"vacId": 2,
+			"createdAt": "17-08-2026",
+			"count": 19
+		},
+		{
+			"vacId": 3,
+			"createdAt": "21-08-2026",
+			"count": 31
+		},
+		{
+			"vacId": 3,
+			"createdAt": "20-08-2026",
+			"count": 27
+		},
+		{
+			"vacId": 3,
+			"createdAt": "19-08-2026",
+			"count": 35
+		},
+		{
+			"vacId": 3,
+			"createdAt": "18-08-2026",
+			"count": 29
+		},
+		{
+			"vacId": 3,
+			"createdAt": "17-08-2026",
+			"count": 24
+		},
+		{
+			"vacId": 4,
+			"createdAt": "21-08-2026",
+			"count": 12
+		},
+		{
+			"vacId": 4,
+			"createdAt": "20-08-2026",
+			"count": 16
+		},
+		{
+			"vacId": 4,
+			"createdAt": "19-08-2026",
+			"count": 9
+		},
+		{
+			"vacId": 4,
+			"createdAt": "18-08-2026",
+			"count": 14
+		},
+		{
+			"vacId": 4,
+			"createdAt": "17-08-2026",
+			"count": 18
+		},
+		{
+			"vacId": 5,
+			"createdAt": "21-08-2026",
+			"count": 42
+		},
+		{
+			"vacId": 5,
+			"createdAt": "20-08-2026",
+			"count": 38
+		},
+		{
+			"vacId": 5,
+			"createdAt": "19-08-2026",
+			"count": 45
+		},
+		{
+			"vacId": 5,
+			"createdAt": "18-08-2026",
+			"count": 34
+		},
+		{
+			"vacId": 5,
+			"createdAt": "17-08-2026",
+			"count": 29
+		},
+		{
+			"vacId": 6,
+			"createdAt": "21-08-2026",
+			"count": 23
+		},
+		{
+			"vacId": 6,
+			"createdAt": "20-08-2026",
+			"count": 19
+		},
+		{
+			"vacId": 6,
+			"createdAt": "19-08-2026",
+			"count": 27
+		},
+		{
+			"vacId": 6,
+			"createdAt": "18-08-2026",
+			"count": 21
+		},
+		{
+			"vacId": 6,
+			"createdAt": "17-08-2026",
+			"count": 16
+		},
+		{
+			"vacId": 7,
+			"createdAt": "21-08-2026",
+			"count": 8
+		},
+		{
+			"vacId": 7,
+			"createdAt": "20-08-2026",
+			"count": 13
+		},
+		{
+			"vacId": 7,
+			"createdAt": "19-08-2026",
+			"count": 11
+		},
+		{
+			"vacId": 7,
+			"createdAt": "18-08-2026",
+			"count": 7
+		},
+		{
+			"vacId": 7,
+			"createdAt": "17-08-2026",
+			"count": 15
+		},
+		{
+			"vacId": 8,
+			"createdAt": "21-08-2026",
+			"count": 35
+		},
+		{
+			"vacId": 8,
+			"createdAt": "20-08-2026",
+			"count": 29
+		},
+		{
+			"vacId": 8,
+			"createdAt": "19-08-2026",
+			"count": 41
+		},
+		{
+			"vacId": 8,
+			"createdAt": "18-08-2026",
+			"count": 33
+		},
+		{
+			"vacId": 8,
+			"createdAt": "17-08-2026",
+			"count": 28
+		},
+		{
+			"vacId": 9,
+			"createdAt": "21-08-2026",
+			"count": 28
+		},
+		{
+			"vacId": 9,
+			"createdAt": "20-08-2026",
+			"count": 31
+		},
+		{
+			"vacId": 9,
+			"createdAt": "19-08-2026",
+			"count": 26
+		},
+		{
+			"vacId": 9,
+			"createdAt": "18-08-2026",
+			"count": 22
+		},
+		{
+			"vacId": 9,
+			"createdAt": "17-08-2026",
+			"count": 19
+		},
+		{
+			"vacId": 10,
+			"createdAt": "21-08-2026",
+			"count": 46
+		},
+		{
+			"vacId": 10,
+			"createdAt": "20-08-2026",
+			"count": 39
+		},
+		{
+			"vacId": 10,
+			"createdAt": "19-08-2026",
+			"count": 51
+		},
+		{
+			"vacId": 10,
+			"createdAt": "18-08-2026",
+			"count": 44
+		},
+		{
+			"vacId": 10,
+			"createdAt": "17-08-2026",
+			"count": 37
+		},
+		{
+			"vacId": 1,
+			"createdAt": "04-09-2026",
+			"count": 22
+		},
+		{
+			"vacId": 2,
+			"createdAt": "04-09-2026",
+			"count": 50
+		},
+		{
+			"vacId": 3,
+			"createdAt": "04-09-2026",
+			"count": 45
+		},
+		{
+			"vacId": 4,
+			"createdAt": "04-09-2026",
+			"count": 37
+		},
+		{
+			"vacId": 5,
+			"createdAt": "04-09-2026",
+			"count": 49
+		},
+		{
+			"vacId": 6,
+			"createdAt": "04-09-2026",
+			"count": 46
+		},
+		{
+			"vacId": 7,
+			"createdAt": "04-09-2026",
+			"count": 41
+		},
+		{
+			"vacId": 8,
+			"createdAt": "04-09-2026",
+			"count": 10
+		},
+		{
+			"vacId": 9,
+			"createdAt": "04-09-2026",
+			"count": 26
+		},
+		{
+			"vacId": 10,
+			"createdAt": "04-09-2026",
+			"count": 46
+		}
+	]
+}

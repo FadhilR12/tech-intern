@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap');
+@import 'tailwindcss';
+@plugin '@tailwindcss/forms';
+@plugin '@tailwindcss/typography';
+
+:root {
+	color-scheme: light;
+}
+html {
+	scroll-behavior: smooth;
+}
+body {
+	font-family: 'Plus Jakarta Sans', ui-sans-serif, system-ui, sans-serif;
+}
+.hero-grid {
+	background-color: #f8f9ff;
+	background-image:
+		radial-gradient(circle at 12% 10%, rgba(199, 210, 254, 0.55), transparent 24rem),
+		radial-gradient(circle at 88% 80%, rgba(190, 242, 100, 0.28), transparent 20rem);
+}
+.hero-highlight {
+	position: relative;
+	z-index: 0;
+	display: inline-block;
+	white-space: nowrap;
+}
+.hero-highlight::after {
+	content: '';
+	position: absolute;
+	right: 0;
+	bottom: -0.14em;
+	left: 0;
+	z-index: -1;
+	height: 0.12em;
+	border-radius: 999px;
+	background: rgba(190, 242, 100, 0.9);
+}
+.focus-ring:focus-visible {
+	outline: 3px solid rgba(79, 70, 229, 0.22);
+	outline-offset: 2px;
+}
+.vacancy-card {
+	transition:
+		transform 0.18s ease,
+		border-color 0.18s ease,
+		box-shadow 0.18s ease;
+}
+.vacancy-card:hover {
+	transform: translateY(-2px);
+	border-color: rgb(165 180 252);
+	box-shadow: 0 14px 32px rgba(15, 23, 42, 0.07);
+}
+.toast {
+	animation: toast-in 0.2s ease both;
+}
+@keyframes toast-in {
+	from {
+		opacity: 0;
+		transform: translateY(8px);
+	}
+}
+.rich-content h2,
+.ql-container.ql-snow .ql-editor h2 {
+	margin: 1.75rem 0 0.7rem;
+	font-size: 1.2rem;
+	font-weight: 800;
+	line-height: 1.4;
+	color: #0f172a;
+}
+.rich-content h3,
+.ql-container.ql-snow .ql-editor h3 {
+	margin: 1.4rem 0 0.6rem;
+	font-size: 1.05rem;
+	font-weight: 800;
+	line-height: 1.5;
+	color: #0f172a;
+}
+.rich-content p,
+.rich-content li,
+.ql-container.ql-snow .ql-editor p,
+.ql-container.ql-snow .ql-editor li {
+	color: #475569;
+	line-height: 1.8;
+}
+.ql-container.ql-snow .ql-editor p {
+	margin: 1rem 0;
+}
+.rich-content ul,
+.rich-content ol {
+	margin: 0.75rem 0;
+	padding-left: 1.4rem;
+	display: grid;
+	gap: 0.45rem;
+}
+.ql-container.ql-snow .ql-editor ul,
+.ql-container.ql-snow .ql-editor ol {
+	margin: 0.75rem 0;
+}
+.ql-container.ql-snow .ql-editor li + li {
+	margin-top: 0.45rem;
+}
+.rich-content ul {
+	list-style: disc;
+}
+.rich-content ol {
+	list-style: decimal;
+}
+.rich-content blockquote,
+.ql-container.ql-snow .ql-editor blockquote {
+	margin: 1.25rem 0;
+	border-left: 3px solid #6366f1;
+	padding-left: 1rem;
+	color: #475569;
+	font-style: italic;
+}
+.rich-content a,
+.ql-container.ql-snow .ql-editor a {
+	color: #4f46e5;
+	text-decoration: underline;
+}
+.rich-content > :first-child,
+.ql-container.ql-snow .ql-editor > :first-child {
+	margin-top: 0;
+}
+.custom-select {
+	appearance: none;
+	-webkit-appearance: none;
+	padding-right: 2.75rem;
+}
+.select-caret {
+	position: absolute;
+	inset-block: 0;
+	right: 1rem;
+	display: flex;
+	align-items: center;
+	pointer-events: none;
+	color: #64748b;
+	transition: color 0.15s ease;
+}
+.select-caret svg {
+	display: block;
+	width: 1rem;
+	height: 1rem;
+	transform: none !important;
+}
+label:hover .select-caret {
+	color: #334155;
+}
+label:focus-within .select-caret {
+	color: #4f46e5;
+}
+.custom-select:disabled ~ .select-caret {
+	color: #cbd5e1;
+}
+.custom-select.border-rose-400 ~ .select-caret {
+	color: #e11d48;
+}
+.ql-toolbar.ql-snow {
+	border: 1px solid #e2e8f0 !important;
+	border-radius: 0.75rem 0.75rem 0 0;
+	background: #f8fafc;
+}
+.ql-container.ql-snow {
+	height: auto !important;
+	min-height: 260px;
+	border: 1px solid #e2e8f0 !important;
+	border-top: 0 !important;
+	border-radius: 0 0 0.75rem 0.75rem;
+	font-family: inherit;
+	font-size: 0.875rem;
+}
+.ql-editor {
+	height: auto;
+	min-height: 260px;
+	line-height: 1.7;
+}
+.ql-toolbar.ql-snow .ql-picker.ql-header {
+	width: 8.5rem;
+}
+.ql-toolbar.ql-snow .ql-picker-label {
+	display: flex;
+	height: 1.75rem;
+	align-items: center;
+	padding: 0 1.75rem 0 0.5rem;
+}
+.ql-toolbar.ql-snow .ql-picker-label::before {
+	line-height: 1;
+}
+.ql-toolbar.ql-snow .ql-picker-label svg {
+	top: 50%;
+	right: 0.25rem;
+	margin-top: 0;
+	transform: translateY(-50%);
+}
+.ql-toolbar.ql-snow .ql-picker-label svg .ql-stroke {
+	stroke: #64748b;
+}
+.ql-toolbar.ql-snow .ql-picker-label:hover svg .ql-stroke,
+.ql-toolbar.ql-snow .ql-picker.ql-expanded .ql-picker-label svg .ql-stroke {
+	stroke: #4f46e5;
+}
+@media (prefers-reduced-motion: reduce) {
+	*,
+	*::before,
+	*::after {
+		scroll-behavior: auto !important;
+		animation-duration: 0.01ms !important;
+		transition-duration: 0.01ms !important;
+	}
+}
