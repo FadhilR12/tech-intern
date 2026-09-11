@@ -9,6 +9,10 @@ export const load: PageServerLoad = async ({ fetch, params }) => {
 
 	const vacancy: Vacancy = await response.json();
 
+	if (vacancy.visibleStatus === 'Shown') {
+		await fetch(`/api/views/${id}`, { method: 'POST' });
+	}
+
 	return {
 		vacancy
 	};

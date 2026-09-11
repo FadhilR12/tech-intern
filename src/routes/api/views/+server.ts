@@ -15,7 +15,7 @@ export const GET: RequestHandler = () => {
 	for (const item of views) {
 		const key = String(item.vacId);
 		const entry = viewsPerVac.get(key) ?? { todayViews: 0, sevenDayViews: 0 };
-		const itemDate = parseDate(item.createdAt);
+		const itemDate = parseDate(String(item.createdAt));
 
 		if (itemDate.getTime() === today.getTime()) {
 			entry.todayViews += item.count;
