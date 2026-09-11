@@ -1,6 +1,6 @@
 import type { Vacancy } from '$lib/index.js';
-import type { PageServerLoad } from './$types.js';
-import { error } from '@sveltejs/kit';
+import type { PageServerLoad, Actions } from './$types.js';
+import { error, redirect } from '@sveltejs/kit';
 
 interface ApiResponse {
 	statusCode: number;
@@ -46,4 +46,11 @@ export const load: PageServerLoad = async ({ fetch }) => {
 		overview: { todayTotalViews, sevenDayTotalViews },
 		topVacancies
 	};
+};
+
+export const actions: Actions = {
+	logout: async ({ cookies }) => {
+		cookies.delete('session', { path: '/' });
+		throw redirect(303, '/admin/login');
+	}
 };

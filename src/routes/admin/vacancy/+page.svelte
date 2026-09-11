@@ -22,6 +22,7 @@
 	import { matches } from '$lib/index.js';
 	import * as z from 'zod';
 	import { invalidateAll } from '$app/navigation';
+	import { enhance } from '$app/forms';
 	let { data } = $props();
 	let searchQuery = $state<string>('');
 	let debouncedSearch = debounce<string>('', 500);
@@ -146,9 +147,16 @@
 				href="/"
 				class="hidden items-center gap-2 rounded-lg px-3 py-2 text-slate-500 hover:text-slate-900 sm:flex"
 				><ExternalLink class="h-4 w-4" aria-hidden="true"></ExternalLink>Website</a
-			><a href="/admin/login" class="flex items-center gap-2 rounded-lg px-3 py-2 text-rose-600"
-				><LogOut class="h-4 w-4" aria-hidden="true"></LogOut>Keluar</a
 			>
+			<form method="POST" action="?/logout" use:enhance>
+				<button
+					type="submit"
+					class="flex cursor-pointer items-center gap-2 rounded-lg px-3 py-2 text-rose-600 hover:bg-rose-50"
+				>
+					<LogOut class="h-4 w-4" aria-hidden="true" />
+					Keluar
+				</button>
+			</form>
 		</div>
 	</nav>
 </header>

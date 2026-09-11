@@ -26,6 +26,7 @@
 	import { sanitizeHtml } from '$lib/index.js';
 	import { goto } from '$app/navigation';
 	import * as z from 'zod';
+	import { enhance } from '$app/forms';
 
 	let { data } = $props();
 	let vacancy = $derived(data.vacancy);
@@ -142,9 +143,16 @@
 				href="/admin/vacancy"
 				class="flex items-center gap-2 rounded-lg bg-indigo-50 px-3 py-2 text-indigo-700"
 				><BriefcaseBusiness class="h-4 w-4" aria-hidden="true"></BriefcaseBusiness>Vacancy</a
-			><a href="/admin/login" class="flex items-center gap-2 rounded-lg px-3 py-2 text-rose-600"
-				><LogOut class="h-4 w-4" aria-hidden="true"></LogOut>Keluar</a
 			>
+			<form method="POST" action="?/logout" use:enhance>
+				<button
+					type="submit"
+					class="flex cursor-pointer items-center gap-2 rounded-lg px-3 py-2 text-rose-600 hover:bg-rose-50"
+				>
+					<LogOut class="h-4 w-4" aria-hidden="true" />
+					Keluar
+				</button>
+			</form>
 		</div>
 	</nav>
 </header>

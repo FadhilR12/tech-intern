@@ -1,6 +1,6 @@
-import type { PageServerLoad } from './$types.js';
-import type { TotalViews, Vacancy, Views } from '$lib/index.js';
-import { error } from '@sveltejs/kit';
+import type { PageServerLoad, Actions } from './$types.js';
+import type { TotalViews, Vacancy } from '$lib/index.js';
+import { error, redirect } from '@sveltejs/kit';
 
 export const load: PageServerLoad = async ({ fetch, params }) => {
 	const id: number = Number(params.id);
@@ -22,4 +22,11 @@ export const load: PageServerLoad = async ({ fetch, params }) => {
 		todayViews: view.todayViews || 0,
 		sevenDayViews: view.views7Days || 0
 	};
+};
+
+export const actions: Actions = {
+	logout: async ({ cookies }) => {
+		cookies.delete('session', { path: '/' });
+		throw redirect(303, '/admin/login');
+	}
 };

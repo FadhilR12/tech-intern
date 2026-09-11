@@ -1,44 +1,12 @@
 <script lang="ts">
+	import { enhance } from '$app/forms';
 	import { LockKeyhole, LogIn, Mail, ShieldCheck } from '@lucide/svelte';
-	import * as z from 'zod';
-	import { goto } from '$app/navigation';
-	let errorMessage: String = $state('');
+
+	let { form } = $props();
 	let showPass: boolean = $state(false);
-	const User = z.object({
-		email: z.string().nonempty('Pastikan semua field terisi').email('Format email salah'),
-		pass: z.string().nonempty('Pastikan semua field terisi')
-	});
 
 	function togglePasswordVisibility() {
 		showPass = !showPass;
-	}
-	async function submitEvent(event: SubmitEvent) {
-		event.preventDefault();
-		const formData = new FormData(event.target as HTMLFormElement);
-		const email = formData.get('email');
-		const pass = formData.get('password');
-
-		try {
-			await User.parseAsync({
-				email: email,
-				pass: pass
-			});
-
-			if (email === 'admin@techinternship.id' && pass === 'admin123') {
-				goto('/admin');
-				return;
-			}
-
-			throw new Error('Email atau password salah');
-		} catch (error) {
-			if (error instanceof z.ZodError) {
-				if (error.issues.length > 0) {
-					errorMessage = error.issues[0].message;
-				}
-			} else if (error instanceof Error) {
-				errorMessage = error.message;
-			}
-		}
 	}
 </script>
 
@@ -53,18 +21,17 @@
 		<h1 class="mt-1 text-2xl font-extrabold">Masuk ke dashboard</h1>
 		<p class="mt-2 text-sm text-slate-500">Kelola vacancy dan lihat analytics views.</p>
 		<!-- TODO(JS): Kirim kredensial ke handler autentikasi, tampilkan error login, dan aktifkan toggle visibilitas password. -->
-		<form id="login-form" class="mt-6 space-y-4" novalidate onsubmit={submitEvent}>
-			<!-- {#if missing}<span class="flex text-[10px] font-bold text-red-700"
-					>Pastikan semua field terisiz</span
-				>
-			{/if}
-			{#if incorect}<span class="flex text-[10px] font-bold text-red-700"
-					>Pastikan memasukan email atau password yang benar</span
-				>
-			{/if} -->
-			{#if errorMessage !== ''}
+		<form
+			method="post"
+			action="?/login"
+			use:enhance
+			id="login-form"
+			class="mt-6 space-y-4"
+			novalidate
+		>
+			{#if form?.error}
 				<span class="flex rounded-[8px] bg-red-300/60 p-3 text-[12px] font-semibold text-red-700"
-					>{errorMessage}</span
+					>{form.error}</span
 				>
 			{/if}
 			<label class="block"
